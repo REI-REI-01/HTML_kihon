@@ -43,6 +43,10 @@ a:hover {
 a:active {
     color: #ff6a3b;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 /* すべてのページに適用 - ヘッダー - */
 .logo {
@@ -137,4 +141,74 @@ a:active {
 /* access.html */
 .map {
     text-align: center;
+}
+
+/* contact.html */
+form div {
+    padding: 12px;
+    border-bottom: 1px dashed #bec2c7;
+}
+select {
+    width: 30em;
+}
+input[name="subject"] {
+    width: 30em;
+}
+textarea {
+    width: 30em;
+    height: 6em;
+}
+input[type="submit"] {
+    margin: 20px 0;
+    width: 30em;
+}
+
+/* スマートフォン向けCSS */
+@media (max-width: 767px) {
+    /* 全体 - ナビゲーション */
+    .wrapper {
+        margin: 0 8px;
+    }
+    .logo {
+        margin: 30px p;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .nav {
+        background-color: #dfddda;
+    }
+    .nav li {
+        display: block;
+    }
+    /* menu-item - 横並び解除 */
+    .menu-item {
+        display: block;
+    }
+    .menu-photo
+        margin-right:  0;
+        width: 100%;
+    }
+    .menu-text {
+        width: 100%;
+    }
+    /* about.html - 画像のパディングを調整 */
+    .shop-photo {
+        padding-right: 0;
+    }
+
+    /* contact.html - フォーム */
+    select {
+        width: 100%;
+    }
+    input[name="subject"] {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+    margin: 20px p;
+    width: 100%;
+    }
 }
